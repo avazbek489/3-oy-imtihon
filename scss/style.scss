@@ -473,3 +473,100 @@ li {
     margin-bottom: 24px;
   }
 }
+
+// PLAN QISMI
+
+.plan {
+  background-color: #fffaf8;
+}
+
+.plan__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 124px 0;
+  gap: 80px;
+  justify-content: center;
+  .plan-top {
+    font-family: "Hind Siliguri";
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: center;
+    height: 72px;
+    color: #292830;
+  }
+  .plan-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    .paid {
+      width: 350px;
+      height: 500px;
+      border-radius: 12px;
+      border: 1px;
+      background: #ffffff;
+      border: 1px solid #f5f5f5;
+      padding: 41px 100px 60px 40px;
+      box-shadow: 0px 0px 50px 0px #0000000a;
+    }
+  }
+}
+.paid {
+  h3 {
+    width: 190px;
+    height: 52px;
+    font-family: "Hind Siliguri";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 51.74px;
+    text-align: left;
+    color: #292830;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .paid-href {
+    display: flex;
+    flex-direction: column;
+    width: 196px;
+    height: 103px;
+    gap: 8px;
+    margin-bottom: 24px;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: "Hind Siliguri";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 29.11px;
+      text-align: left;
+      color: #292830;
+    }
+  }
+
+  .paid {
+    .paid-tittle {
+      font-family: "Hind Siliguri";
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 38.81px;
+      text-align: left;
+      color: #292830;
+      .paid-tittle-span {
+        font-family: "Hind Siliguri";
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 32.34px;
+        text-align: left;
+        color: #bdbdbd;
+      }
+    }
+  }
+}
