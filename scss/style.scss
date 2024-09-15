@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind Siliguri" Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// ANIMATSIYA BOLIMI
+img {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:active{
+    transform: scale(0.95);
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline solid #000;
+    color: #000;
+  }
+}
+
+li {
+  list-style: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    list-style: disc;
+  }
+
+  &::marker {
+    color: #000;
+  }
+}
+
+// HEADER QISMI
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    a {
+      font-family: "Hind Siliguri";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 17.1px;
+      text-align: left;
+      color: #000;
+    }
+  }
+
+  button {
+    width: 160px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #ff7235;
+    font-family: "Hind Siliguri";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17.1px;
+    text-align: left;
+    color: #ff7235;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
