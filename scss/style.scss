@@ -250,3 +250,226 @@ li {
 }
 
 // SAVE QISMI
+
+.save {
+  background-color: #fffaf8;
+}
+
+.save__container {
+  padding: 141px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 31px;
+
+  h6 {
+    font-family: "Hind Siliguri";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35.57px;
+    text-align: left;
+    color: #bdbdbd;
+  }
+
+  h2 {
+    width: 540px;
+    height: 288px;
+
+    font-family: "Hind Siliguri";
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    text-align: left;
+    color: #292830;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    width: 540px;
+    height: 117px;
+    font-family: "Hind Siliguri";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.81px;
+    text-align: left;
+    color: #bdbdbd;
+    margin-bottom: 24px;
+  }
+}
+
+.save-right {
+  a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Hind Siliguri";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #ff7235;
+  }
+}
+
+// NEED QISMI
+
+.need__container {
+  padding: 141px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 31px;
+
+  h6 {
+    font-family: "Hind Siliguri";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35.57px;
+    text-align: left;
+    color: #bdbdbd;
+  }
+
+  h2 {
+    width: 540px;
+    height: 288px;
+
+    font-family: "Hind Siliguri";
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    text-align: left;
+    color: #292830;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    width: 540px;
+    height: 117px;
+    font-family: "Hind Siliguri";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.81px;
+    text-align: left;
+    color: #bdbdbd;
+    margin-bottom: 24px;
+  }
+}
+
+.need-left {
+  a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Hind Siliguri";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #ff7235;
+  }
+}
+
+// WORK QISMI
+
+.work__container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: center;
+  padding: 139px 0;
+
+  .work-top {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+
+    h2 {
+      width: 730px;
+      height: 192px;
+      font-family: "Hind Siliguri";
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 96px;
+      text-align: left;
+      color: #292830;
+    }
+
+    p {
+      width: 350px;
+      height: 156px;
+      color: #bdbdbd;
+      font-family: "Hind Siliguri";
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 38.81px;
+      text-align: left;
+    }
+  }
+}
+
+.work-bottom {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+
+  .work-templet {
+    width: 350px;
+    height: 350px;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    &:hover {
+      box-shadow: 0px 0px 50px 0px #0000000a;
+    }
+
+    button {
+      width: 64px;
+      height: 64px;
+      background: #ffbd740d;
+      border-radius: 50%;
+    }
+  }
+
+  .work-fail {
+    box-shadow: 0px 0px 50px 0px #0000000a;
+  }
+}
+
+.work-templet {
+  h3 {
+    font-family: "Hind Siliguri";
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    color: #000;
+
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    width: 220px;
+    height: 46px;
+    font-family: "Hind Siliguri";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.64px;
+    text-align: center;
+    color: #bdbdbd;
+    margin-bottom: 24px;
+  }
+}
