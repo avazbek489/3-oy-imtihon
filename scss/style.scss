@@ -897,3 +897,35 @@ li {
     }
   }
 }
+
+.footer-bottom {
+  border-top: 3px solid #bdbdbd33;
+  height: 150px;
+}
+.footer-bottom-left {
+  a {
+    font-family: "Hind Siliguri";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.64px;
+    text-align: left;
+    color: #292830;
+  }
+}
+
+.footer-bottom-center {
+  a {
+    font-family: "Hind Siliguri";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.64px;
+    text-align: left;
+    color: #292830;
+  }
+}
+
+.footer-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
