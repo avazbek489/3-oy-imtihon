@@ -2,9 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Hind Siliguri", sans-serif;
+  font-family: $general-font, sans-serif;
 }
-
 .container {
   max-width: 1440px;
   width: 100%;
@@ -12,6 +11,24 @@
   padding: 0 20px;
 }
 
+
+// OZGARUVCHILARNI TAYINLASH QISMI
+
+$text-color: #292830;
+$black: #000;
+$backgroun: #ff7235;
+$white: #fff;
+$link-color: #bdbdbd;
+$general-font: Hind Siliguri;
+$transition: all 0.3s ease;
+$medium-size: 24px;
+$little-size: 16px;
+$tittle-size: 18px;
+$facebook: brightness(0) saturate(100%) invert(32%) sepia(88%) saturate(2659%) hue-rotate(190deg) brightness(100%) contrast(89%);
+$google: brightness(0) saturate(100%) invert(32%) sepia(88%) saturate(2659%) hue-rotate(190deg) brightness(100%) contrast(89%);
+$coca-cola: brightness(0) saturate(100%) invert(17%) sepia(100%) saturate(743%) hue-rotate(-37deg) brightness(105%) contrast(102%); 
+$linkedin: brightness(0) saturate(100%) invert(21%) sepia(73%) saturate(757%)hue-rotate(-147deg) brightness(104%) contrast(93%);
+$samsung:  brightness(0) saturate(100%) invert(32%) sepia(85%) saturate(1500%)hue-rotate(180deg) brightness(100%) contrast(100%);
 // ANIMATSIYA SECTION
 img {
   cursor: pointer;
@@ -19,7 +36,7 @@ img {
 
 button {
   border: none;
-  transition: all 0.3s ease;
+  transition: $transition;
   cursor: pointer;
 
   &:active {
@@ -29,18 +46,18 @@ button {
 
 a {
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: $transition;
   cursor: pointer;
 
   &:hover {
-    text-decoration: underline solid #000;
-    color: #000;
+    text-decoration: underline solid $black;
+    color: $black;
   }
 }
 
 li {
   list-style: none;
-  transition: all 0.3s ease;
+  transition: $transition;
   cursor: pointer;
 
   &:hover {
@@ -48,7 +65,7 @@ li {
   }
 
   &::marker {
-    color: #000;
+    color: $black;
   }
 }
 
@@ -68,12 +85,12 @@ li {
     gap: 40px;
 
     a {
-      font-family: "Hind Siliguri";
-      font-size: 18px;
+      font-family: $general-font;
+      font-size: $tittle-size;
       font-weight: 400;
       line-height: 17.1px;
       text-align: left;
-      color: #000;
+      color: $black;
     }
   }
 
@@ -81,14 +98,14 @@ li {
     width: 160px;
     height: 48px;
     border-radius: 8px;
-    border: 1px solid #ff7235;
-    font-family: "Hind Siliguri";
-    font-size: 18px;
+    border: 1px solid $backgroun;
+    font-family: $general-font;
+    font-size: $tittle-size;
     font-weight: 400;
     line-height: 17.1px;
     text-align: left;
-    color: #ff7235;
-    background-color: #fff;
+    color: $backgroun;
+    background-color: $white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,24 +122,23 @@ li {
   padding-bottom: 158px;
 
   h1 {
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 96px;
     font-weight: 700;
     line-height: 96px;
     text-align: left;
-    color: #292830;
+    color: $text-color;
     width: 540px;
     height: 288px;
   }
 
   p {
-    //styleName: Sub-title;
-    font-family: "Hind Siliguri";
-    font-size: 24px;
+    font-family: $general-font;
+    font-size: $medium-size;
     font-weight: 400;
     line-height: 38.81px;
     text-align: left;
-    color: #bdbdbd;
+    color: $link-color;
     margin-top: -40px;
     margin-bottom: 40px;
   }
@@ -131,7 +147,7 @@ li {
 .hero-left-bot {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: $medium-size;
 
   button {
     display: flex;
@@ -142,23 +158,23 @@ li {
     width: 225px;
     height: 75px;
     border-radius: 8px;
-    background: #ff7235;
+    background: $backgroun;
 
-    color: #fff;
-    font-family: "Hind Siliguri";
-    font-size: 24px;
+    color: $white;
+    font-family: $general-font;
+    font-size: $medium-size;
     font-weight: 400;
     line-height: 38.81px;
     text-align: left;
   }
 
   a {
-    font-family: "Hind Siliguri";
-    font-size: 24px;
+    font-family: $general-font;
+    font-size: $medium-size;
     font-weight: 400;
     line-height: 38.81px;
     text-align: left;
-    color: #bdbdbd;
+    color: $link-color;
   }
 }
 
@@ -168,7 +184,7 @@ li {
   background-repeat: no-repeat;
   width: 1440px;
   height: 712px;
-  background-color: #ff7235;
+  background-color: $backgroun;
   padding-top: 87px;
   padding-left: 165px;
   padding-right: 165px;
@@ -185,35 +201,30 @@ li {
   padding-bottom: 66px;
   .facebook {
     &:hover {
-      filter: brightness(0) saturate(100%) invert(32%) sepia(88%)
-        saturate(2659%) hue-rotate(190deg) brightness(100%) contrast(89%);
+      filter: $facebook;
     }
   }
   .google {
     &:hover {
-      filter: brightness(0) saturate(100%) invert(32%) sepia(88%)
-        saturate(2659%) hue-rotate(190deg) brightness(100%) contrast(89%);
+      filter: $google;
     }
   }
 
   .coca-cola {
     &:hover {
-      filter: brightness(0) saturate(100%) invert(17%) sepia(100%)
-        saturate(743%) hue-rotate(-37deg) brightness(105%) contrast(102%);
+      filter: $coca-cola;
     }
   }
 }
 
 .linkedin {
   &:hover {
-    filter: brightness(0) saturate(100%) invert(21%) sepia(73%) saturate(757%)
-      hue-rotate(-147deg) brightness(104%) contrast(93%);
+    filter: $linkedin;
   }
 }
 .samsung {
   &:hover {
-    filter: brightness(0) saturate(100%) invert(32%) sepia(85%) saturate(1500%)
-      hue-rotate(180deg) brightness(100%) contrast(100%);
+    filter: $samsung;
   }
 }
 
@@ -228,39 +239,39 @@ li {
   gap: 31px;
 
   h6 {
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 22px;
     font-weight: 400;
     line-height: 35.57px;
     text-align: left;
-    color: #bdbdbd;
+    color: $link-color;
   }
 
   h2 {
     width: 540px;
     height: 288px;
 
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 96px;
     font-weight: 700;
     line-height: 96px;
     text-align: left;
-    color: #292830;
+    color: $text-color;
 
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: $medium-size;
+    margin-bottom: $medium-size;
   }
 
   p {
     width: 540px;
     height: 117px;
-    font-family: "Hind Siliguri";
-    font-size: 24px;
+    font-family: $general-font;
+    font-size: $medium-size;
     font-weight: 400;
     line-height: 38.81px;
     text-align: left;
-    color: #bdbdbd;
-    margin-bottom: 24px;
+    color: $link-color;
+    margin-bottom: $medium-size;
   }
 }
 
@@ -269,19 +280,19 @@ li {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-family: "Hind Siliguri";
-    font-size: 24px;
+    font-family: $general-font;
+    font-size: $medium-size;
     font-weight: 400;
-    line-height: 24px;
+    line-height: $medium-size;
     text-align: left;
-    color: #ff7235;
+    color: $backgroun;
   }
 }
 
 // SAVE SECTION
 
 .save {
-  background-color: #fffaf8;
+  background-color: $whiteaf8;
 }
 
 .save__container {
@@ -293,39 +304,39 @@ li {
   gap: 31px;
 
   h6 {
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 22px;
     font-weight: 400;
     line-height: 35.57px;
     text-align: left;
-    color: #bdbdbd;
+    color: $link-color;
   }
 
   h2 {
     width: 540px;
     height: 288px;
 
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 96px;
     font-weight: 700;
     line-height: 96px;
     text-align: left;
-    color: #292830;
+    color: $text-color;
 
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: $medium-size;
+    margin-bottom: $medium-size;
   }
 
   p {
     width: 540px;
     height: 117px;
-    font-family: "Hind Siliguri";
-    font-size: 24px;
+    font-family: $general-font;
+    font-size: $medium-size;
     font-weight: 400;
     line-height: 38.81px;
     text-align: left;
-    color: #bdbdbd;
-    margin-bottom: 24px;
+    color: $link-color;
+    margin-bottom: $medium-size;
   }
 }
 
@@ -334,12 +345,12 @@ li {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-family: "Hind Siliguri";
-    font-size: 24px;
+    font-family: $general-font;
+    font-size: $medium-size;
     font-weight: 400;
-    line-height: 24px;
+    line-height: $medium-size;
     text-align: left;
-    color: #ff7235;
+    color: $backgroun;
   }
 }
 
@@ -354,39 +365,39 @@ li {
   gap: 31px;
 
   h6 {
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 22px;
     font-weight: 400;
     line-height: 35.57px;
     text-align: left;
-    color: #bdbdbd;
+    color: $link-color;
   }
 
   h2 {
     width: 540px;
     height: 288px;
 
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 96px;
     font-weight: 700;
     line-height: 96px;
     text-align: left;
-    color: #292830;
+    color: $text-color;
 
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: $medium-size;
+    margin-bottom: $medium-size;
   }
 
   p {
     width: 540px;
     height: 117px;
-    font-family: "Hind Siliguri";
-    font-size: 24px;
+    font-family: $general-font;
+    font-size: $medium-size;
     font-weight: 400;
     line-height: 38.81px;
     text-align: left;
-    color: #bdbdbd;
-    margin-bottom: 24px;
+    color: $link-color;
+    margin-bottom: $medium-size;
   }
 }
 
@@ -395,12 +406,12 @@ li {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-family: "Hind Siliguri";
-    font-size: 24px;
+    font-family: $general-font;
+    font-size: $medium-size;
     font-weight: 400;
-    line-height: 24px;
+    line-height: $medium-size;
     text-align: left;
-    color: #ff7235;
+    color: $backgroun;
   }
 }
 
@@ -422,20 +433,20 @@ li {
     h2 {
       width: 730px;
       height: 192px;
-      font-family: "Hind Siliguri";
+      font-family: $general-font;
       font-size: 96px;
       font-weight: 700;
       line-height: 96px;
       text-align: left;
-      color: #292830;
+      color: $text-color;
     }
 
     p {
       width: 350px;
       height: 156px;
-      color: #bdbdbd;
-      font-family: "Hind Siliguri";
-      font-size: 24px;
+      color: $link-color;
+      font-family: $general-font;
+      font-size: $medium-size;
       font-weight: 400;
       line-height: 38.81px;
       text-align: left;
@@ -453,15 +464,15 @@ li {
     width: 350px;
     height: 350px;
     border-radius: 12px;
-    background: #ffffff;
-    transition: all 0.3s ease;
+    background: $whitefff;
+    transition: $transition;
 
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     &:hover {
-      box-shadow: 0px 0px 50px 0px #0000000a;
+      box-shadow: 0px 0px 50px 0px $black0000a;
     }
 
     button {
@@ -473,57 +484,57 @@ li {
   }
 
   .work-fail {
-    box-shadow: 0px 0px 50px 0px #0000000a;
+    box-shadow: 0px 0px 50px 0px $black0000a;
   }
 }
 
 .work-templet {
   h3 {
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 30px;
     font-weight: 500;
     line-height: 30px;
     text-align: center;
-    color: #000;
+    color: $black;
 
-    margin-top: 24px;
+    margin-top: $medium-size;
     margin-bottom: 12px;
   }
 
   p {
     width: 220px;
     height: 46px;
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 14px;
     font-weight: 400;
     line-height: 22.64px;
     text-align: center;
-    color: #bdbdbd;
-    margin-bottom: 24px;
+    color: $link-color;
+    margin-bottom: $medium-size;
   }
 }
 
 // PLAN SECTION
 
 .plan {
-  background-color: #fffaf8;
+  background-color: $whiteaf8;
 }
 
 .plan__container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 124px 0;
+  padding: 1$medium-size 0;
   gap: 80px;
   justify-content: center;
   .plan-top {
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 72px;
     font-weight: 700;
     line-height: 72px;
     text-align: center;
     height: 72px;
-    color: #292830;
+    color: $text-color;
   }
   .plan-bottom {
     display: flex;
@@ -535,10 +546,10 @@ li {
       height: 500px;
       border-radius: 12px;
       border: 1px;
-      background: #ffffff;
+      background: $whitefff;
       border: 1px solid #f5f5f5;
       padding: 41px 100px 60px 40px;
-      box-shadow: 0px 0px 50px 0px #0000000a;
+      box-shadow: 0px 0px 50px 0px $black0000a;
     }
   }
 }
@@ -546,12 +557,12 @@ li {
   h3 {
     width: 190px;
     height: 52px;
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 32px;
     font-weight: 600;
     line-height: 51.74px;
     text-align: left;
-    color: #292830;
+    color: $text-color;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -565,30 +576,30 @@ li {
     width: 196px;
     height: 103px;
     gap: 8px;
-    margin-bottom: 24px;
+    margin-bottom: $medium-size;
 
     a {
       display: flex;
       align-items: center;
       gap: 8px;
-      font-family: "Hind Siliguri";
-      font-size: 18px;
+      font-family: $general-font;
+      font-size: $tittle-size;
       font-weight: 400;
       line-height: 29.11px;
       text-align: left;
-      color: #292830;
+      color: $text-color;
     }
   }
 }
 
 .paid {
   h4 {
-    font-family: "Hind Siliguri";
-    font-size: 24px;
+    font-family: $general-font;
+    font-size: $medium-size;
     font-weight: 600;
     line-height: 38.81px;
     text-align: left;
-    color: #292830;
+    color: $text-color;
   }
 
   h6 {
@@ -597,7 +608,7 @@ li {
     font-weight: 400;
     line-height: 19.4px;
     text-align: left;
-    color: #bdbdbd;
+    color: $link-color;
   }
 
   button {
@@ -609,21 +620,21 @@ li {
     gap: 10px;
     width: 136px;
     height: 50px;
-    background: #fff;
+    background: $white;
     border-radius: 8px;
-    border: 1px solid #ff7235;
-    color: #ff7235;
+    border: 1px solid $backgroun;
+    color: $backgroun;
     font-family: Hind Siliguri;
-    font-size: 16px;
+    font-size: $little-size;
     font-weight: 400;
     line-height: 25.87px;
     text-align: left;
   }
 
   .get-btn {
-    border: 1px solid #ff7235;
-    background: #ff7235;
-    color: #fff;
+    border: 1px solid $backgroun;
+    background: $backgroun;
+    color: $white;
   }
 }
 
@@ -633,7 +644,7 @@ li {
   background-repeat: no-repeat;
   width: 1440px;
   height: 712px;
-  background-color: #ff7235;
+  background-color: $backgroun;
 
   display: flex;
   align-items: center;
@@ -648,12 +659,12 @@ li {
     h2 {
       width: 920px;
       height: 144px;
-      font-family: "Hind Siliguri";
+      font-family: $general-font;
       font-size: 72px;
       font-weight: 700;
       line-height: 72px;
       text-align: center;
-      color: #fff;
+      color: $white;
     }
   }
 
@@ -670,13 +681,13 @@ li {
   h3 {
     width: 920px;
     height: 36px;
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 36px;
     font-weight: 500;
     line-height: 36px;
     text-align: center;
-    color: #fff;
-    margin-top: 24px;
+    color: $white;
+    margin-top: $medium-size;
     margin-bottom: 60px;
   }
 
@@ -689,14 +700,14 @@ li {
     align-items: center;
     border-radius: 8px;
     z-index: 1000;
-    background-color: #fff;
+    background-color: $white;
 
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 22px;
     font-weight: 400;
     line-height: 20.9px;
     text-align: left;
-    color: #ff7235;
+    color: $backgroun;
   }
 }
 
@@ -722,7 +733,7 @@ li {
     .footer-bottom-left {
       display: flex;
       align-items: center;
-      gap: 24px;
+      gap: $medium-size;
     }
   }
 }
@@ -740,37 +751,37 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ff7235;
+    background-color: $backgroun;
     border-radius: 50%;
 
-    font-family: "Hind Siliguri";
-    font-size: 24px;
+    font-family: $general-font;
+    font-size: $medium-size;
     font-weight: 700;
     line-height: 22.8px;
     text-align: left;
-    color: #fff;
+    color: $white;
   }
 
   h5 {
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 23px;
     font-weight: 500;
     line-height: 21.85px;
     text-align: left;
-    color: #292830;
+    color: $text-color;
   }
 }
 
 .footer-link {
   margin-right: 123px;
   h6 {
-    font-family: "Hind Siliguri";
-    font-size: 24px;
+    font-family: $general-font;
+    font-size: $medium-size;
     font-weight: 500;
     line-height: 38.81px;
     text-align: left;
-    color: #292830;
-    margin-bottom: 24px;
+    color: $text-color;
+    margin-bottom: $medium-size;
   }
 
   ul {
@@ -779,12 +790,12 @@ li {
     gap: 8px;
 
     a {
-      font-family: "Hind Siliguri";
-      font-size: 18px;
+      font-family: $general-font;
+      font-size: $tittle-size;
       font-weight: 500;
       line-height: 29.11px;
       text-align: left;
-      color: #292830;
+      color: $text-color;
     }
   }
 }
@@ -792,13 +803,13 @@ li {
 .footer-blok {
   margin-right: 128px;
   h6 {
-    font-family: "Hind Siliguri";
-    font-size: 24px;
+    font-family: $general-font;
+    font-size: $medium-size;
     font-weight: 500;
     line-height: 38.81px;
     text-align: left;
-    color: #292830;
-    margin-bottom: 24px;
+    color: $text-color;
+    margin-bottom: $medium-size;
   }
 
   ul {
@@ -807,12 +818,12 @@ li {
     gap: 8px;
 
     a {
-      font-family: "Hind Siliguri";
-      font-size: 18px;
+      font-family: $general-font;
+      font-size: $tittle-size;
       font-weight: 500;
       line-height: 29.11px;
       text-align: left;
-      color: #292830;
+      color: $text-color;
     }
   }
 }
@@ -824,43 +835,43 @@ li {
   flex-direction: column;
 
   h6 {
-    font-family: "Hind Siliguri";
-    font-size: 24px;
+    font-family: $general-font;
+    font-size: $medium-size;
     font-weight: 500;
     line-height: 38.81px;
     text-align: left;
-    margin-bottom: 24px;
-    color: #292830;
+    margin-bottom: $medium-size;
+    color: $text-color;
   }
 
   a {
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 14px;
     font-weight: 400;
     line-height: 22.64px;
     text-align: left;
-    color: #bdbdbd;
+    color: $link-color;
     margin-top: 10px;
   }
 }
 
 .footer-input {
   h5 {
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 20px;
     font-weight: 400;
     line-height: 32.34px;
     text-align: left;
-    margin-bottom: 18px;
-    color: #bdbdbd;
+    margin-bottom: $tittle-size;
+    color: $link-color;
   }
 
   .footer-submit {
     width: 349px;
     height: 62px;
-    background-color: #fff;
+    background-color: $white;
     border-radius: 8px;
-    border: 1px solid #292830;
+    border: 1px solid $text-color;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -869,15 +880,15 @@ li {
     button {
       width: 102px;
       height: 48px;
-      background-color: #ff7235;
+      background-color: $backgroun;
       border-radius: 8px;
 
-      font-family: "Hind Siliguri";
-      font-size: 16px;
+      font-family: $general-font;
+      font-size: $little-size;
       font-weight: 600;
       line-height: 25.87px;
       text-align: left;
-      color: #fff;
+      color: $white;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -885,12 +896,12 @@ li {
 
     input {
       border: none;
-      font-family: "Hind Siliguri";
-      font-size: 18px;
+      font-family: $general-font;
+      font-size: $tittle-size;
       font-weight: 400;
       line-height: 29.11px;
       text-align: left;
-      color: #292830;
+      color: $text-color;
       width: 200px;
       height: 40px;
       padding-left: 10px;
@@ -899,28 +910,28 @@ li {
 }
 
 .footer-bottom {
-  border-top: 3px solid #bdbdbd33;
+  border-top: 3px solid $link-color33;
   height: 150px;
 }
 .footer-bottom-left {
   a {
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 14px;
     font-weight: 400;
     line-height: 22.64px;
     text-align: left;
-    color: #292830;
+    color: $text-color;
   }
 }
 
 .footer-bottom-center {
   a {
-    font-family: "Hind Siliguri";
+    font-family: $general-font;
     font-size: 14px;
     font-weight: 400;
     line-height: 22.64px;
     text-align: left;
-    color: #292830;
+    color: $text-color;
   }
 }
 
