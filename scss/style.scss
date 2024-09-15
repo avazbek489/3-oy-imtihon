@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Hind Siliguri",sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
 }
 
 .container {
@@ -22,7 +22,7 @@ button {
   transition: all 0.3s ease;
   cursor: pointer;
 
-  &:active{
+  &:active {
     transform: scale(0.95);
   }
 }
@@ -95,11 +95,158 @@ li {
   }
 }
 
-
 // HERO QISMI
 
-.header__container{
+.hero__container {
   display: flex;
   align-items: center;
   gap: 30px;
+  justify-content: center;
+  padding-bottom: 158px;
+
+  h1 {
+    font-family: "Hind Siliguri";
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    text-align: left;
+    color: #292830;
+    width: 540px;
+    height: 288px;
+  }
+
+  p {
+    //styleName: Sub-title;
+    font-family: "Hind Siliguri";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.81px;
+    text-align: left;
+    color: #bdbdbd;
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
 }
+
+.hero-left-bot {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+
+    width: 225px;
+    height: 75px;
+    border-radius: 8px;
+    background: #ff7235;
+
+    color: #fff;
+    font-family: "Hind Siliguri";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.81px;
+    text-align: left;
+  }
+
+  a {
+    font-family: "Hind Siliguri";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.81px;
+    text-align: left;
+    color: #bdbdbd;
+  }
+}
+
+// MAIN QISMI
+.main__container {
+  background-image: url("../images/Blob.png");
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 712px;
+  background-color: #ff7235;
+  padding-top: 87px;
+  padding-left: 165px;
+  padding-right: 165px;
+}
+
+// ARTICLE QISMI
+
+.article__container {
+  display: flex;
+  align-items: center;
+  gap: 108px;
+  justify-content: center;
+  padding-top: 82px;
+  padding-bottom: 66px;
+
+  img {
+    filter: grayscale(100%);
+  }
+}
+// INFO QISMI
+
+.info__container {
+  padding: 141px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 31px;
+
+  h6 {
+    font-family: "Hind Siliguri";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35.57px;
+    text-align: left;
+    color: #bdbdbd;
+  }
+
+  h2 {
+    width: 540px;
+    height: 288px;
+
+    font-family: "Hind Siliguri";
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    text-align: left;
+    color: #292830;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    width: 540px;
+    height: 117px;
+    font-family: "Hind Siliguri";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.81px;
+    text-align: left;
+    color: #bdbdbd;
+    margin-bottom: 24px;
+  }
+}
+
+.info-left {
+  a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Hind Siliguri";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #ff7235;
+  }
+}
+
+// SAVE QISMI
